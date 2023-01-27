@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.248" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/answer_back.xml" value="0.14" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/answer_background.xml" value="0.2525" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/answer_letter.xml" value="0.14" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/back_start_shape.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/button_back.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/button_start_background.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/check_image_cardview.xml" value="0.1385" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/chose_cardview_background.xml" value="0.1385" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/english_card_view_back.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/false_answer.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.1705" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/ic_baseline_play_arrow_24.xml" value="0.1115" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/ic_launcher_background.xml" value="0.248" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/mathematics_cardview_back.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/next_btn.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/next_btn_back.xml" value="0.248" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/russia_card_view_back.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/seekbar_backgraund.xml" value="0.13" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/shape_back.xml" value="0.2555" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/start_back_top.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/start_button.xml" value="0.121" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/true_answer.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/drawable/user_name_back.xml" value="0.2155" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_chose.xml" value="0.25" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_game.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_results.xml" value="0.12158054711246201" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_setting.xml" value="0.25" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/activity_start.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/all_result.xml" value="0.25" />
+        <entry key="..\:/Android/Tests/app/src/main/res/layout/model_result.xml" value="0.2" />
+        <entry key="..\:/Android/Tests/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Android/Tests/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

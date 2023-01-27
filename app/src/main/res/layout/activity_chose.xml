@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    tools:context=".ChoseActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/voris_logo"
+            android:src="@drawable/voris_images_icon_project"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/voris_text"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="26dp"
+            android:layout_width="56dp"
+            android:layout_height="56dp"/>
+        <TextView
+            android:id="@+id/voris_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Voris education"
+            android:textColor="#4CAF50"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@id/voris_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/be_the_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Be the first!"
+            android:textColor="#C3C3C3"
+            android:textSize="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/voris_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:clickable="true"
+                android:id="@+id/geography_card_view"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/matematik_card_view"
+                android:layout_marginTop="40dp"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="NotSibling">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/chose_cardview_background"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/check_image_cardview"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Ona tili"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="70dp"
+                android:elevation="30dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/geography"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/geography_card_view" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/matematik_card_view"
+                android:clickable="true"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/geography_card_view">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/mathematics_cardview_back"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/check_image_cardview"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Matematika"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_marginBottom="70dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/mathematics"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:elevation="30dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/matematik_card_view"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/english_card_view"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:elevation="20dp"
+                android:clickable="true"
+                app:cardCornerRadius="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/matematik_card_view">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/english_card_view_back"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/check_image_cardview"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Ingliz tili"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_marginBottom="65dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/english"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:elevation="30dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/english_card_view"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/russia_card_view"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="150dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintDimensionRatio="2:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/english_card_view">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/russia_card_view_back"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_play_arrow_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/check_image_cardview"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"/>
+
+                    <TextView
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="20dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Rus tili"
+                        android:textSize="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_marginBottom="65dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/russia"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:elevation="30dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/russia_card_view"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:background="@drawable/button_back"
+        android:scaleType="centerCrop"
+        android:padding="7dp"
+        android:src="@drawable/ic_baseline_arrow_back_ios_new_24"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="56dp"
+        android:layout_height="56dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
